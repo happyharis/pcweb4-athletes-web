@@ -24,28 +24,28 @@
     </nav>
     <div class="container">
       <h1>Add Player</h1>
-      <form>
+      <form action="/add" method="POST">
         <div class="mb-3">
-          <label for="playerName" class="form-label">Name</label>
-          <input class="form-control" id="playerName" />
+          <label for="name" class="form-label">Name</label>
+          <input class="form-control" id="name" name="name" />
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Description</label
-          >
+          <label for="description" class="form-label">Description</label>
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="description"
             rows="3"
+            name="description"
           ></textarea>
         </div>
 
         <div class="mb-3">
-          <label for="playerImage" class="form-label">Image URL</label>
+          <label for="image" class="form-label">Image URL</label>
           <input
             class="form-control"
-            id="playerImage"
+            id="image"
             placeholder="https://image.com/1.jpeg"
+            name="image"
           />
           <div id="emailHelp" class="form-text">
             Make sure the url ends wit an image type e.g. jpeg, png, jpg
