@@ -24,8 +24,8 @@
     </nav>
     <div class="container">
       <div class="row">
+        <% players.forEach((player) => { %>
         <div class="col pt-5">
-          <% players.forEach((player) => { %>
           <div class="card" style="width: 18rem">
             <img height="200" style="object-fit: cover" src="<%= player.image
             %>"" class="card-img-top" alt="..." />
@@ -35,8 +35,8 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <% }) %>
         </div>
+        <% }) %>
       </div>
     </div>
 
