@@ -24,19 +24,17 @@
     </nav>
     <div class="container">
       <div class="row">
-        <% players.forEach((player) => { %>
         <div class="col pt-5">
           <div class="card" style="width: 18rem">
             <img height="200" style="object-fit: cover" src="<%= player.image
             %>"" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title"><%= player.name %></h5>
-              <p class="card-text"><%= player.description %></p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Ronaldo</h5>
+              <p class="card-text">Best soccer player</p>
+              <a href="#" class="btn btn-outline-danger">Delete</a>
             </div>
           </div>
         </div>
-        <% }) %>
       </div>
     </div>
 
